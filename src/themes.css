@@ -1,0 +1,20 @@
+:root {
+    --text-color: white;
+    --text-hover: #b788e8;
+
+    --section-heading-color: #b788e8;
+
+    --section-bg: #283039;
+    
+    --icon-bg: #283039;
+    --icon-hover: #7f3fc3;
+
+    --card-bg: #171a1f;
+    --card-bg-hover: #21242a;
+    --card-text-hover: #b788e8;
+    --card-description-color: #9cabba;
+
+    --certificate-icon-color: #283039;
+
+    --contacts-icon-bg: #283039;
+}

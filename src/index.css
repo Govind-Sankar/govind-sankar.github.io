@@ -1,0 +1,98 @@
+@import "tailwindcss";
+@import "./themes.css";
+
+@font-face {
+  font-family: 'SpaceGrotesk';
+  src: url('./fonts/SpaceGrotesk-VariableFont_wght.ttf') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+.blinking-cursor {
+  animation: blink 1.1s step-start infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+.section-heading {
+  @apply text-3xl font-semibold text-[var(--section-heading-color)]
+}
+
+.section-area {
+  @apply flex flex-col
+}
+
+.skill-Main {
+  @apply text-orange-400 
+}
+
+.skill-Stack {
+  @apply text-gray-500
+}
+
+.about-text {
+  font-family: 'SpaceGrotesk';
+  @apply text-[var(--text-color)] font-light mt-5 text-sm lg:text-lg
+}
+
+.card {
+  @apply w-full bg-[var(--card-bg)] rounded-2xl flex flex-col justify-start p-7 text-[var(--text-color)] hover:text-[var(--card-text-hover)] hover:bg-[var(--card-bg-hover)] transition-transform duration-100 ease-in-out hover:scale-101
+}
+
+.card-image {
+  @apply w-full h-[75%] bg-[#b788e8] rounded-2xl  mb-3.5
+}
+
+.card-title {
+  font-weight: 700;
+  @apply justify-items-start
+}
+
+.card-description {
+  @apply justify-items-start text-[var(--card-description-color)] text-[1rem]
+}
+
+.project-button {
+  @apply bg-[var(--card-bg)] rounded-2xl w-full h-[10vh] text-[var(--text-color)] cursor-pointer hover:bg-[var(--card-bg-hover)] hover:text-[var(--card-text-hover)] transition-transform duration-100 ease-in-out hover:scale-101 
+}
+
+.certification-item {
+  @apply grid grid-flow-col auto-cols-max gap-x-4 w-[50vw] h-[8vh] p-1
+}
+
+.certification-icon {
+  @apply flex items-center justify-center w-10 md:w-12 lg:w-13 h-full bg-[var(--certificate-icon-color)] rounded pl-2 pr-2 
+}
+
+.certification-text {
+  @apply grid grid-flow-row-dense space-y-0
+}
+
+.certification-title {
+  font-weight: 600;
+  @apply justify-items-start text-[var(--text-color)] hover:underline 
+}
+
+.contacts-nav-icon {
+  @apply flex items-center space-x-2 bg-[var(--contacts-icon-bg)] hover:bg-[var(--icon-hover)] rounded px-3 py-2 text-white transition;
+}
+
+.contacts-title {
+  font-weight: 600;
+  font-size: large;
+  @apply justify-items-start text-[var(--text-color)]
+}
+
+.email-field {
+  @apply w-full sm:w-[75vw] md:w-[50vw] lg:w-[25vw] h-[6vh] px-4 py-2 rounded-md bg-[var(--section-bg)] text-[var(--text-color)]
+}
+
+.message-field {
+  @apply w-full sm:w-[75vw] md:w-[50vw] lg:w-[25vw] h-[20vh] px-4 py-2 rounded-md bg-[var(--section-bg)] text-[var(--text-color)]
+}
+
+.form-button {
+  @apply mt-3 mb-3 p-2 w-20 rounded-md text-white bg-[#8227e4] hover:bg-[#7910e8] cursor-pointer
+}
