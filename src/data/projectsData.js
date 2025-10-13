@@ -1,4 +1,10 @@
-const subarrays = [["Kotlin", "Jetpack Compose"], ["MERN", "React", "MongoDB"], ["HTML", "CSS", "Flask"], ["Reat", "TailwindCSS", "Javascript"]]
+const subarrays = [
+  ["Kotlin", "Jetpack Compose"], 
+  ["MERN", "React", "MongoDB"], 
+  ["HTML", "CSS", "Flask"], 
+  ["Reat", "TailwindCSS", "Javascript"],
+  ["Python", "scikit-learn"]
+]
 
 const projects = [
   {
@@ -14,14 +20,14 @@ const projects = [
   },
   {
     order: "2",
-    title: "Snake Game",
-    description: "A snake game built for Android with Kotlin and Jetpack Compose",
-    long_description: "A fun and lightweight Snake Game built for Android using Kotlin and Jetpack Compose. Control the snake, eat food, and grow longer while avoiding collisions. Simple to play, optimized for smooth performance, and perfect for casual gaming.",
-    link: "https://github.com/Govind-Sankar/Snake-Game",
+    title: "IMDb Sentiment Analyzer",
+    description: "A machine learning project for sentiment analysis on the IMDb movie reviews dataset.",
+    long_description: "A machine learning project for sentiment analysis on the IMDb movie reviews dataset. This project compares classical ML models (Logistic Regression, SVM, Random Forest) with a fine-tuned DistilBERT transformer model. The web interface is built with Streamlit and hosted on HuggingFace Spaces.",
+    link: "https://github.com/Govind-Sankar/IMDb-Sentiment-Analyzer",
     image: "",
-    color: "#6695A9",
-    tag: "Android Development",
-    sub_tag: subarrays[0],
+    color: "#B28CB2",
+    tag: "Machine Learning",
+    sub_tag: subarrays[3],
   },
   {
     order: "3",
@@ -36,6 +42,17 @@ const projects = [
   },
   {
     order: "4",
+    title: "Snake Game",
+    description: "A snake game built for Android with Kotlin and Jetpack Compose",
+    long_description: "A fun and lightweight Snake Game built for Android using Kotlin and Jetpack Compose. Control the snake, eat food, and grow longer while avoiding collisions. Simple to play, optimized for smooth performance, and perfect for casual gaming.",
+    link: "https://github.com/Govind-Sankar/Snake-Game",
+    image: "",
+    color: "#6695A9",
+    tag: "Android Development",
+    sub_tag: subarrays[0],
+  },
+  {
+    order: "5",
     title: "Flash-Light App",
     description: "A simple Flashlight (Torch) App made with Kotlin and Jetpack Compose.",
     long_description: "Flashlight-App is a lightweight and minimalist Android app built with Kotlin and Jetpack Compose. It provides a simple way to toggle your device's flashlight on or off with a clean, modern UI. Easy to install, open-source, and MIT licensed—perfect for users and developers alike.",
@@ -46,7 +63,7 @@ const projects = [
     sub_tag: subarrays[0],
   },
   {
-    order: "5",
+    order: "6",
     title: "Note Keeper WebApp",
     description: "A web application designed to securely store and manage user notes.",
     long_description: "Note Keeper is a web-based application designed to securely store and manage user notes. Built using Python (Flask) for the backend and HTML/CSS for the frontend. It offers User Authentication, Notes Management and Secure Data Handling.",
@@ -57,7 +74,7 @@ const projects = [
     sub_tag: subarrays[2],
   },
   {
-    order: "6",
+    order: "7",
     title: "Personal Portfolio Website",
     description: "A modern personal portfolio website made with React and Tailwind.",
     long_description: "A personal portfolio showcasing skills. Features interactive project displays, certifications, and a contact form with CAPTCHA protection. Built with React, TailwindCSS, and modern web practices, the site highlights professional growth, creativity, and technical expertise in a sleek, user-friendly design.",
