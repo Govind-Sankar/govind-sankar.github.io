@@ -2,7 +2,7 @@ const subarrays = [
   ["Kotlin", "Jetpack Compose"], 
   ["MERN", "React", "MongoDB"], 
   ["HTML", "CSS", "Flask"], 
-  ["Reat", "TailwindCSS", "Javascript"],
+  ["React", "TailwindCSS", "Javascript"],
   ["Python", "scikit-learn"]
 ]
 
