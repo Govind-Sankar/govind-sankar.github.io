@@ -21,13 +21,13 @@ const projects = [
   {
     order: "2",
     title: "IMDb Sentiment Analyzer",
-    description: "A machine learning project for sentiment analysis on the IMDb movie reviews dataset.",
+    description: "An ML project for sentiment analysis on the IMDb movie reviews dataset.",
     long_description: "A machine learning project for sentiment analysis on the IMDb movie reviews dataset. This project compares classical ML models (Logistic Regression, SVM, Random Forest) with a fine-tuned DistilBERT transformer model. The web interface is built with Streamlit and hosted on HuggingFace Spaces.",
     link: "https://github.com/Govind-Sankar/IMDb-Sentiment-Analyzer",
     image: "",
     color: "#B28CB2",
     tag: "Machine Learning",
-    sub_tag: subarrays[3],
+    sub_tag: subarrays[4],
   },
   {
     order: "3",
