@@ -2,8 +2,8 @@
 @import "./themes.css";
 
 @font-face {
-  font-family: 'SpaceGrotesk';
-  src: url('./fonts/SpaceGrotesk-VariableFont_wght.ttf') format('woff2');
+  font-family: "SpaceGrotesk";
+  src: url("./fonts/SpaceGrotesk-VariableFont_wght.ttf") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
@@ -13,66 +13,76 @@
 }
 
 @keyframes blink {
-  50% { opacity: 0; }
+  50% {
+    opacity: 0;
+  }
 }
 
 .section-heading {
-  @apply text-3xl font-semibold text-[var(--section-heading-color)]
+  @apply text-3xl font-semibold text-[var(--section-heading-color)];
 }
 
 .section-area {
-  @apply flex flex-col
+  @apply flex flex-col;
+}
+
+.eyebrow {
+  @apply text-xs text-center tracking-widest uppercase text-purple-400 mb-2;
+}
+
+.section-title {
+  @apply text-3xl text-center font-semibold text-[var(--section-heading-color)] mb-16;
 }
 
 .skill-Main {
-  @apply text-orange-400 
+  @apply text-orange-400;
 }
 
 .skill-Stack {
-  @apply text-gray-500
+  @apply text-gray-500;
 }
 
 .about-text {
-  font-family: 'SpaceGrotesk';
-  @apply text-[var(--text-color)] font-light mt-5 text-sm lg:text-lg
+  font-family: "SpaceGrotesk";
+  @apply text-[var(--text-color)] font-light mt-5 text-sm lg:text-lg;
 }
 
 .card {
-  @apply w-full bg-[var(--card-bg)] rounded-2xl flex flex-col justify-start p-7 text-[var(--text-color)] hover:text-[var(--card-text-hover)] hover:bg-[var(--card-bg-hover)] transition-transform duration-100 ease-in-out hover:scale-101
+  @apply w-full bg-[var(--card-bg)] rounded-2xl flex flex-col justify-start p-7 text-[var(--text-color)] hover:text-[var(--card-text-hover)] hover:bg-[var(--card-bg-hover)] transition-transform duration-100 ease-in-out hover:scale-101;
 }
 
 .card-image {
-  @apply w-full h-[75%] bg-[#b788e8] rounded-2xl  mb-3.5
+  @apply w-full h-[75%] bg-[#b788e8] rounded-2xl  mb-3.5;
 }
 
 .card-title {
   font-weight: 700;
-  @apply justify-items-start
+  @apply justify-items-start;
 }
 
 .card-description {
-  @apply justify-items-start text-[var(--card-description-color)] text-[1rem]
+  @apply justify-items-start text-[var(--card-description-color)] text-[1rem];
 }
 
 .project-button {
-  @apply bg-[var(--card-bg)] rounded-2xl w-full h-[10vh] text-[var(--text-color)] cursor-pointer hover:bg-[var(--card-bg-hover)] hover:text-[var(--card-text-hover)] transition-transform duration-100 ease-in-out hover:scale-101 
+  @apply bg-[var(--card-bg)] rounded-2xl w-full h-[10vh] text-[var(--text-color)] cursor-pointer hover:bg-[var(--card-bg-hover)] hover:text-[var(--card-text-hover)] transition-transform duration-100 ease-in-out hover:scale-101;
 }
 
 .certification-item {
-  @apply grid grid-flow-col auto-cols-max gap-x-4 w-[50vw] h-[8vh] p-1
+  @apply grid grid-flow-col auto-cols-max gap-x-4 w-[50vw] h-[8vh] p-1;
 }
 
 .certification-icon {
-  @apply flex items-center justify-center w-10 md:w-12 lg:w-13 h-full bg-[var(--certificate-icon-color)] rounded pl-2 pr-2 
+  @apply flex items-center justify-center w-10 md:w-12 lg:w-13 h-full bg-[var(--certificate-icon-color)] rounded pl-2 pr-2;
 }
 
 .certification-text {
-  @apply grid grid-flow-row-dense space-y-0
+  @apply grid grid-flow-row-dense space-y-0;
 }
 
 .certification-title {
   font-weight: 600;
-  @apply justify-items-start text-[var(--text-color)] hover:underline 
+  @apply justify-items-start text-[var(--text-color)] hover:underline;
 }
 
 .contacts-nav-icon {
@@ -82,17 +92,257 @@
 .contacts-title {
   font-weight: 600;
   font-size: large;
-  @apply justify-items-start text-[var(--text-color)]
+  @apply justify-items-start text-[var(--text-color)];
 }
 
 .email-field {
-  @apply w-full sm:w-[75vw] md:w-[50vw] lg:w-[25vw] h-[6vh] px-4 py-2 rounded-md bg-[var(--section-bg)] text-[var(--text-color)]
+  @apply w-full sm:w-[75vw] md:w-[50vw] lg:w-[20vw] h-[6vh] px-4 py-2 rounded-md bg-[var(--section-bg)] text-[var(--text-color)];
 }
 
 .message-field {
-  @apply w-full sm:w-[75vw] md:w-[50vw] lg:w-[25vw] h-[20vh] px-4 py-2 rounded-md bg-[var(--section-bg)] text-[var(--text-color)]
+  @apply w-full sm:w-[75vw] md:w-[50vw] lg:w-[43vw] h-[20vh] px-4 py-2 rounded-md bg-[var(--section-bg)] text-[var(--text-color)];
 }
 
 .form-button {
-  @apply mt-3 mb-3 p-2 w-20 rounded-md text-white bg-[#8227e4] hover:bg-[#7910e8] cursor-pointer
+  @apply mt-3 mb-3 p-2 w-20 rounded-md text-white bg-[#8227e4] hover:bg-[#7910e8] cursor-pointer;
+}
+
+/* ============================= */
+/* Education / Timeline Section */
+/* ============================= */
+
+.education-section {
+  @apply /* bg-[var(--section-bg)] */ pt-12 pb-8 px-5 text-center text-[var(--text-color)];
+}
+
+.education-journey {
+  @apply text-xs tracking-widest mb-2 text-purple-400;
+}
+
+.education-title {
+  @apply text-3xl text-center font-semibold text-[var(--section-heading-color)] mb-16;
+}
+
+.education-timeline {
+  @apply relative max-w-5xl mx-auto;
+}
+
+.education-line {
+  @apply absolute left-1/2 top-0 h-[80vh] w-[2px] -translate-x-1/2;
+}
+
+.education-item {
+  @apply relative w-1/2 px-10 py-5;
+}
+
+.education-item-left {
+  @apply text-right left-0;
+}
+
+.education-item-right {
+  @apply text-left left-1/2;
+}
+
+.education-dot {
+  @apply absolute top-8 w-3.5 h-3.5 rounded-full shadow-[0_0_15px_currentColor];
+}
+
+.education-item-left .education-dot {
+  @apply right-[-7px];
+}
+
+.education-item-right .education-dot {
+  @apply left-[-7px];
+}
+
+.education-dot-purple {
+  @apply bg-purple-500 text-purple-500;
+}
+
+.education-dot-cyan {
+  @apply bg-cyan-400 text-cyan-400;
+}
+
+.education-card {
+  @apply w-full bg-[var(--card-bg)] rounded-2xl flex flex-col justify-start p-7 text-[var(--text-color)] hover:text-[var(--card-text-hover)] hover:bg-[var(--card-bg-hover)] transition-transform duration-100 ease-in-out hover:scale-101 backdrop-blur-md;
+}
+
+.education-year {
+  @apply text-xs font-semibold;
+}
+
+.education-year-purple {
+  @apply text-purple-400;
+}
+
+.education-year-cyan {
+  @apply text-cyan-400;
+}
+
+.education-card-title {
+  @apply text-lg font-semibold mt-2;
+}
+
+.education-card-institute {
+  @apply text-sm text-gray-400 mb-2;
+}
+
+.education-card-description {
+  @apply text-sm text-[var(--card-description-color)];
+}
+
+@media (max-width: 768px) {
+  .education-line {
+    @apply left-5;
+  }
+
+  .education-item {
+    @apply w-full left-0 text-left pl-14 pr-4;
+  }
+  .education-item-left .education-dot {
+    @apply left-[14px] right-auto;
+  }
+
+  .education-item-right .education-dot {
+    @apply left-[14px] right-auto;
+  }
+}
+
+/* ============================= */
+/* Skills */
+/* ============================= */
+
+@layer components {
+  .skills-section {
+    @apply min-h-1 py-24 text-white;
+  }
+
+  .skills-header {
+    @apply text-center mb-16;
+  }
+
+  .skills-title {
+    @apply text-3xl md:text-4xl font-bold flex items-center justify-center gap-2;
+  }
+
+  .skills-bolt {
+    @apply text-cyan-400;
+  }
+
+  .skills-grid {
+    @apply grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto px-6;
+  }
+
+  .skills-card {
+    @apply bg-white/5 backdrop-blur-lg rounded-2xl p-6 border border-white/10;
+  }
+
+  .skills-card-center {
+    @apply flex flex-col justify-center;
+  }
+
+
+  .skills-card-header {
+    @apply flex items-center gap-3 mb-6 text-lg font-semibold;
+  }
+
+  .skills-icon {
+    @apply w-10 h-10 rounded-xl flex items-center justify-center text-lg;
+  }
+
+  .skills-icon-purple {
+    @apply bg-purple-500/20 text-purple-400;
+  }
+
+  .skills-icon-cyan {
+    @apply bg-cyan-500/20 text-cyan-400;
+  }
+
+  .skills-icon-orange {
+    @apply bg-orange-500/20 text-orange-400;
+  }
+
+  .skills-bar {
+    @apply mb-5;
+  }
+
+  .skills-bar-labels {
+    @apply flex justify-between text-sm mb-2 text-white/80;
+  }
+
+  .skills-bar-value {
+    @apply text-purple-400;
+  }
+
+  .skills-bar-track {
+    @apply w-full h-2 rounded-full bg-white/10 overflow-hidden;
+  }
+
+  .skills-bar-fill {
+    @apply h-full rounded-full bg-gradient-to-r from-purple-500 to-fuchsia-500;
+  }
+
+  .skills-pill-container {
+    @apply flex flex-wrap gap-3;
+  }
+
+  .skills-pill {
+    @apply px-3 py-1 text-sm rounded-full bg-white/10 border border-white/10;
+  }
+
+  .skills-list {
+    @apply space-y-3 text-sm;
+  }
+
+  .skills-list-item {
+    @apply flex items-center gap-3 text-white/80;
+  }
+
+  .skills-bullet {
+    @apply text-purple-400;
+  }
+}
+
+.tech-tile-grid {
+  @apply space-y-4;
+}
+
+.tech-tile-grid-wide {
+  @apply grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch;
+}
+
+.tech-tile {
+  @apply rounded-xl border border-white/10 bg-white/5 p-4 h-full flex flex-col;
+}
+
+.tech-tile-header {
+  @apply flex items-center justify-between mb-3;
+}
+
+.tech-tile-header h4 {
+  @apply font-semibold;
+}
+
+.tech-level {
+  @apply text-xs px-2 py-1 rounded-full border;
+}
+
+.tech-level-advanced {
+  @apply text-purple-400 border-purple-400/30 bg-purple-500/10;
+}
+
+.tech-level-proficient {
+  @apply text-cyan-400 border-cyan-400/30 bg-cyan-500/10;
+}
+
+.tech-level-beginner {
+  @apply text-orange-400 border-orange-400/30 bg-orange-500/10;
+}
+
+.tech-highlights {
+  @apply flex flex-wrap gap-2;
+}
+
+.tech-highlight {
+  @apply text-xs px-2 py-1 rounded-full bg-white/10 border border-white/10;
 }

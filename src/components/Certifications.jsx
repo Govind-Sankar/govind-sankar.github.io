@@ -4,9 +4,10 @@ import certificates from '../data/certificationData.js';
 
 function Certifications() {
   return (
-    <section id="certificates" className="pt-10 pb-5 scroll-mt-20 section-area">
-      <h1 className="section-heading">Certifications</h1>
-      <div className='grid grid-flow-row-dense gap-3 pt-5'>
+    <section id="certificates" className="pt-15 pb-15 scroll-mt-20 section-area">
+      <p className="eyebrow">Credentials</p>
+      <h2 className="section-title">Certifications</h2>
+      <div className='grid sm:grid-cols-1 lg:grid-cols-1 gap-3 pt-5'>
 
         {certificates.map((certificate, key) => (
 
